@@ -258,7 +258,7 @@ body{
   border-radius: 50%;
   cursor: pointer;
   border: 1px solid rgba(0, 0, 0, 0.1);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .icon-close-modal {
   position: absolute;
@@ -336,16 +336,7 @@ body{
 
  color: var(--text-black-color);
 }
-/*
-.doing{
- font-weight: 700;
- font-size: 36px;
- line-height: 1.17;
- letter-spacing: 0.03em;
-  
- color: var(--text-black-color);
-}
- */ 
+
 .doing{
  background-color: var(--body-background-color);
 }
@@ -353,23 +344,7 @@ body{
 .doing {
   padding-bottom: 94px;
 }
-/*
-.doing-img {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-.doing-img > .li-doing-img:not(:last-child) {
-  margin-right: 30px;
-}
-.doing-img > .li-doing-img:nth-child(3n) {
-  margin-right: 0;
-}
 
-.img {
-  display: block;
-}
-*/
 .doing-img {
   display: flex;
 }
@@ -477,7 +452,6 @@ body{
 .team.text-team {
   font-size: 16px;
   line-height: 1.18;
-  /* text-align: center; */
   letter-spacing: 0.03em;
   color: var(--primeri-text-color);
 }
@@ -558,7 +532,9 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   padding: 20px 45px;
   border-radius: 4px;
   border: 1px solid #afb1b8;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .client-button:focus,
